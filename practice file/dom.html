@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom</title>
+    
+</head>
+<body>
+    <h1 id="dom">Hello</h1>
+    <h1 class="dom1">h2 selection</h1>
+    <p class="dom1">p selection</p>
+    <p>tag name</p>
+<script>
+    var store = document.getElementById('dom');
+    var arr=document.getElementsByClassName("dom1");//calss name
+    var arr=document.getElementsByTagName('p');// tag name
+    console.log(arr[0]);// index check
+    console.log(arr);
+</script>
+
+    
+</body>
+</html>

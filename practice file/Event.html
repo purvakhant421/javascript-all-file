@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event</title>
+</head>
+<body>
+
+    <!-- =========================== Onclick ======================== -->
+    <!-- The user clicks an HTML element -->
+    <h2>Onclick</h2>
+    <button onclick="save()" type="button">Onclick</button>
+    <script type="text/javascript">
+        function save(){
+            document.write("<h2>It's Onclick Event..</h2>");
+            
+        }
+    </script>
+
+    <!-- ================= On change =============== --></body><hr>
+    <!-- An HTML element has been changed -->
+    <!-- <button onchange="upparc()" type="button">Onchange</button> -->
+    <h2> On change</h2>
+    Enter your name: <input type="text" id="button" onchange="upperCase()">
+    <script>
+        function upperCase() {
+          const oc = document.getElementById("button");
+          oc.value = oc.value.toUpperCase();
+        }
+    </script>
+    
+    <!-- ============== On mouseover & On Mouse out =========== --><hr>
+    <!--  When moving the mouse over / out of an text , button , image  -->
+    <style>
+        button{
+            background-color: darkblue;
+            color: white;
+            padding: 10px 10px 10px 10px;
+            border-radius: 5px;
+            margin: 20px 20px;
+        }
+    </style>
+    <h2>On Mouse over & On Mouse out</h2>
+    <button onmouseover="style.color='hotpink'" onmouseout="style.color='white'">Mouse 
+        Over</button>
+    <h1 onmouseover="style.color='red'" onmouseout="style.color='black'">Mouse over</h1>
+
+    <!-- ================ On key down ================--><hr>
+    <!-- When a user pressing / holding down a key -->
+    <h2> On key down </h2>
+    Enter name :<input type="text" onkeydown="myFunction()">
+
+    <script>
+        function myFunction() {
+          alert("You pressed a key inside the input field");
+        }
+    </script>
+
+    <!-- ============ On load ============ --><hr>
+    
+    <!-- <body onload="myFunction()">
+        <h2>Hello World!</h2>
+    </body>
+    <script>
+        function myFunction() {
+          alert("Page is loaded");
+        }
+    </script> -->
+
+
+
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Async & defer</title>
+
+    <!-- async makes a function return a Promise
+         await makes a function wait for a Promise -->
+
+        <!-- script tag head nd body bane ma lakhay -->
+
+     <!-- async -->
+    <script async>
+        (function greet(){
+            let msg = "hello world goodmorning..!";
+            console.log(msg);
+        })();
+            
+    </script>
+
+</head>
+<body>
+
+    <h1 id="button">click</h1>
+
+
+    <!-- async and defer a always script ma j lakhay (like <script async , script defer) -->
+    
+
+    <!-- defer -->
+     <script defer>
+        let msg = "hello world..!";
+        (function greet(){
+            console.log(msg);
+        })();
+            
+    </script>
+    
+
+
+
+    <!--  -->
+    <!-- monthe 0 thi cout thay che  -->
+    <!-- day 1 thi count thay -->
+    <script>
+        let x = new Date(2018, 0 , 12 , 12 , 30 , 12 , 7);
+        //  year , month , day (date) , hours , minite , second , mily secound 
+
+        // console.log(x);
+        document.write(x);
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrow Function</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 1st method 
+        const demo = () => {
+            // console.log("hello");
+            document.write("<h2>HELLO KEM CHHO</h2>");
+        }
+        demo();
+
+        // 2nd method
+        const sum = (a , b) => {
+            let c = a + b;
+            document.write("Ans = "+c+"</br>");
+        }
+        sum(10 , 5);
+
+        // 3rd method
+        const sum2 = () =>{
+            let m = 10 , n = 20;
+            let p = m + n;
+            return p;
+        }
+        var ans = sum2();
+        document.write("Ans = "+ans+"</br>");
+
+        // 4th method    
+        const sum3 = (x,y,z) => {
+            let s = x + y + z;
+            return s;
+        }
+        let ans2 = sum3(10,20,30);
+        document.write("Ans = "+ans2);
+    </script>
+</body>
+</html>

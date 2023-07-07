@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call-back</title>
+</head>
+<body>
+    <script>
+        // 1st method
+        // function add(num1 , num2){
+        //     console.log(num1 + num2);
+        // }
+        // add(20,30);
+
+        // 2nd method
+        // function add(num1 , num2){
+        //     console.log(num1 + num2);
+        // }
+        // let a = 20;
+        // let b = 30;
+        // add(a,b);
+
+        // 3rd method
+        function sayhello(){
+            console.log("Hello.....");
+        }
+        function add(num1 , num2 , callback){
+            sayhello();  // direct pan call thay 
+            console.log(num1 + num2);
+            callback();
+        }
+        let a = 30;
+        let b = 30;
+        add(a,b,sayhello);
+    </script>
+</body>
+</html>

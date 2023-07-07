@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OBJETECT</title>
+</head>
+<body>
+    <script>
+        const person = {
+            name :"purva",
+            age :23,
+            "first course" :{
+                one : "frontend",
+                two : "back end",
+                three : "full stack",
+            }
+        }
+        console.log(person["first course"].one);
+        // ==============
+        const person0 = {
+            name :"purva",
+            age :23,
+            "first course" :{
+                "one" : "frontend",
+                "two" : "back end",
+                three : "full stack",
+            }
+        }
+        console.log(person["first course"]["two"]);
+        // ===================
+        const person1 = {
+            name :"shreedev",
+            age :25,
+            course : "full stack dev.."
+        }
+        console.log(person1);
+        // =============================
+        // execcer methd () che a 
+        const person2 = {
+            name :"purva",
+            last_name : "ratanapara",
+            age : 23,
+            "first course" :{
+                one : "frontend",
+                two : "back end",
+                three : "full stack",
+            },
+            full_name:function(){
+                return this.name + " " + this.last_name
+            }
+        }
+        console.log(person2.full_name());
+        // ======================
+        const person3 = {
+            name :"shreedev",
+            last_name : "khant",
+            age : 25,
+            full_name:function(){
+                return this.name + " " + this.last_name
+            }
+        }
+        person3.iq = 10;
+        console.log(person3);
+        // ============================
+        
+        
+    </script>
+</body>
+</html>

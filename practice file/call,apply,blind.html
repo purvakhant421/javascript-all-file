@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call , apply , blind</title>
+</head>
+<body>
+    <h2 id="demo"></h2>
+    <script type="text/javascript">
+        // call function
+        // const person = {
+    const myObject = {
+      firstName:"John",
+      lastName: "Doe",
+      fullName: function () {
+        return this.firstName + " " + this.lastName;
+      }
+    }
+    document.getElementById("demo").innerHTML = myObject.fullName();
+    // This will return "John Doe":
+    // person.fullName();  
+
+
+    // apply
+    //     const person = {
+    //   fullName: function() {
+    //     return this.firstName + " " + this.lastName;
+    //   }
+    // }
+    // const person1 = {
+    //   firstName:"purva",
+    //   lastName: "khant"
+    // }
+    // document.getElementById("demo").innerHTML = person.fullName.apply(person1); 
+
+
+    // bind
+        const person = {
+          firstName:"purva",
+          lastName: "ratanapara",
+          fullName: function() {
+            return this.firstName + " " + this.lastName;
+          }
+        }
+        
+        const member = {
+          firstName:"shreedev",
+          lastName: "khant",
+        }
+        
+        let fullName = person.fullName.bind(member);
+        
+        document.getElementById("demo").innerHTML = fullName();
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>function immediate</title>
+</head>
+<body>
+    
+    
+    <script>
+        // immidiate invock 
+        // with function calling
+        function immediatecall(){
+            document.write("Purva ratanapara...!");
+        }
+        immediatecall();
+
+        
+        // without calling (Auto call function)
+        (function immediatecall(){
+            document.write("Shrrdev khant...");
+        })();
+        
+// =====================================================================
+        // argument pass thay perameter ma (its array)
+        function parameterall(){
+            // console.log(arguments[4]);
+            let sum = 0;
+            for (let x = 0; x < arguments.length; x++){
+            sum += arguments[x];
+        }
+        return sum;
+        }
+        console.log( parameterall(1,2,3,4,5,6,7));
+
+// =======================================================
+        // anonymous function
+        let person = {
+            name:"purva",
+            age:23
+        }
+        person.sayhello=function(){
+            console.log("HEllo world good morning..!");
+        }
+        person.sayhello();
+       
+    </script>
+</body>
+</html>

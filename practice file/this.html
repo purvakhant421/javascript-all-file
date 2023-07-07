@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>this key word</title>
+</head>
+<body>
+    <p id="demo"></p>
+
+    <script type="text/javascript">
+        let person = {
+        firstName: "purva",
+        middleName : "shreedev",
+        lastName : "khant",
+        id       : 2144,
+        fullName : function() {
+          return this.firstName + " " + this.middleName + " " + this.lastName;
+        }
+    };
+
+    // Display data from the object:
+    document.getElementById("demo").innerHTML = person.fullName();
+
+    </script>
+</body>
+</html>

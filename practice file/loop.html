@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>loop</title>
+</head>
+<body>
+    <script>
+        //   =====  with for loop   ========
+        let a= 1;
+        for(let i =0;i<10;i++){
+            a += i;
+        }
+        document.write("<h1>==>for loop</br></h1>");
+        document.write("Sum of first 10 number is: " + a +"</br>");
+
+         //   =====  with while loop   ========
+         let s = 0;
+         let b= 1;
+         while(s<10){
+             b += s;
+             s++;
+         }
+         document.write("<h1>==>while loop</br></h1>");
+        document.write("Sum of first 10 number is: " + b);
+
+        //   =====  with  do while loop   ========
+        document.write("<h1>===============do while loop=============</h1>")
+        var num1 = 10; 
+        var j = 1; 
+
+        do {
+         document.write("<h2>"+num1 + " * " + j + " = " + (num1 * j)+"</h2>"); 
+           j++; 
+        } while (j <= 10);
+    </script>
+    
+</body>
+</html>

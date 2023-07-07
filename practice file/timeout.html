@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Out </title>
+</head>
+<body>
+    <h2 id="demo"></h2>
+    <!-- set Timeout -->
+        <button onclick="setTimeout(myFunction, 3000)">Try it</button>
+
+        <script type="text/javascript">
+        function myFunction() {
+          alert('Hello');
+        }
+        </script>
+
+        <!-- timer -->
+        <script type="text/javascript">
+            setTimeout(function start(){
+                    const date = new Date();
+                    document.getElementById('demo').innerHTML = date.toLocaleTimeString();
+                },5000)
+            
+        
+               function save(){
+                setTimeout(function stop(){
+                    clearInterval(time);
+                },5000)
+               }
+        </script>
+
+        <!-- setInterval -->
+        
+        <script type="text/javascript">
+            setInterval(myTimer, 1000);
+            function myTimer() {
+              const d = new Date();
+              document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+            }
+        </script>
+</body>
+</html>
